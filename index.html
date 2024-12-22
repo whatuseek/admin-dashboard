@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Tech | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom animation styles */
+        @keyframes pulseCircle {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.3);
+                opacity: 0.6;
+            }
+        }
+
+        .pulse {
+            animation: pulseCircle 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 overflow-hidden">
+
+    <!-- Header -->
+    <header class="relative bg-gray-800 py-6 px-10 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">Networking Tech</h1>
+        <nav class="space-x-6">
+            <a href="login.html" class="text-gray-300 hover:text-white transition">Login</a>
+            <a href="admin.html" class="text-gray-300 hover:text-white transition">Admin Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col justify-center items-center text-center p-10">
+        <!-- Animated Circles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-32 h-32 bg-blue-500 rounded-full opacity-50 pulse" style="top: 10%; left: 20%;">
+            </div>
+            <div class="absolute w-48 h-48 bg-green-500 rounded-full opacity-30 pulse" style="bottom: 15%; right: 25%;">
+            </div>
+            <div class="absolute w-60 h-60 bg-purple-500 rounded-full opacity-20 pulse" style="top: 30%; right: 10%;">
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="relative z-10 max-w-4xl mx-auto fade-in">
+            <h1 class="text-5xl font-bold leading-tight mb-6">
+                Revolutionizing <span class="text-blue-500">Networking</span>
+                with Cutting-Edge Technology
+            </h1>
+            <p class="text-lg text-gray-300 mb-8">
+                Empowering businesses and individuals with fast, secure, and reliable networking solutions.
+                Experience the future of connectivity with us.
+            </p>
+            <a href="trending.html"
+                class="bg-blue-500 text-white px-8 py-3 rounded-md shadow-lg hover:bg-blue-600 transition">
+                Get Started
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-800 py-16 px-10">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Our Core Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">High-Speed Internet</h3>
+                    <p class="text-gray-300">
+                        Enjoy blazing-fast internet speeds designed for seamless browsing, streaming, and downloading.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-green-400 mb-4">Secure Connections</h3>
+                    <p class="text-gray-300">
+                        Protect your data with our state-of-the-art security protocols and encryption technologies.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-purple-400 mb-4">24/7 Support</h3>
+                    <p class="text-gray-300">
+                        Our team is always available to provide expert assistance and ensure uninterrupted connectivity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center text-gray-500">
+        <p>&copy; 2024 Networking Tech. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
